@@ -19,23 +19,13 @@ jobs:
     - name: Imprimir caminho do projeto
       run: pwd
 
-    - name: Clonar repositório
-      run: |
-        git clone https://github.com/jacksonEverton/java-arquivos.git
-        cd java-arquivos
-        pwd
-
     - name: Setup Node.js
       uses: actions/setup-node@v3
       with:
         node-version: '14'
 
     - name: Install dependencies
-      run: |
-        cd java-arquivos  # Certifique-se de estar no diretório correto
-        npm install
+      run: npm install
 
     - name: Run tests
-      run: |
-        cd java-arquivos  # Certifique-se de estar no diretório correto
-        npm test
+      run: npm test
