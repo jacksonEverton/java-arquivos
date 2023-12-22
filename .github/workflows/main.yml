@@ -32,10 +32,10 @@ jobs:
 
     - name: Install dependencies
       run: |
-        cd /java-arquivos  # Certifique-se de estar no diretório correto
+        cd java-arquivos  # Certifique-se de estar no diretório correto
         npm install
 
     - name: Run tests
       run: |
-        cd /java-arquivos  # Certifique-se de estar no diretório correto
+        cd java-arquivos  # Certifique-se de estar no diretório correto
         npm test
