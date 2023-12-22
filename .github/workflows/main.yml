@@ -25,9 +25,6 @@ jobs:
         cd /
         pwd
 
-    - name: Listar conteúdo do subdiretório (se aplicável)
-      run: ls -R ./caminho/do/seu/projeto
-
     - name: Setup Node.js
       uses: actions/setup-node@v3
       with:
