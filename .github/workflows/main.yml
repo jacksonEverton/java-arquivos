@@ -22,7 +22,7 @@ jobs:
     - name: Clonar repositório
       run: |
         git clone https://github.com/jacksonEverton/java-arquivos.git
-        cd /
+        cd java-arquivos
         pwd
 
     - name: Setup Node.js
