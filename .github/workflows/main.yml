@@ -13,6 +13,21 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
+    - name: Listar conteúdo do diretório
+      run: ls -R
+
+    - name: Imprimir caminho do projeto
+      run: pwd
+
+    - name: Clonar repositório
+      run: |
+        git clone https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git
+        cd SEU_REPOSITORIO
+        pwd
+
+    - name: Listar conteúdo do subdiretório (se aplicável)
+      run: ls -R ./caminho/do/seu/projeto
+
     - name: Setup Node.js
       uses: actions/setup-node@v3
       with:
