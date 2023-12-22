@@ -21,8 +21,8 @@ jobs:
 
     - name: Clonar repositório
       run: |
-        git clone https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git
-        cd SEU_REPOSITORIO
+        git clone https://github.com/jacksonEverton/java-arquivos.git
+        cd /
         pwd
 
     - name: Listar conteúdo do subdiretório (se aplicável)
