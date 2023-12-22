@@ -37,6 +37,7 @@ public class FileStorageController {
 
 	@PostMapping("/upload")
 	public ResponseEntity<String> uploadFile(@RequestParam("file") MultipartFile file){
+		//teste
 		String fileName = StringUtils.cleanPath(file.getOriginalFilename());
 		try {
 			Path targetLocation = fileStorageLocation.resolve(fileName);
